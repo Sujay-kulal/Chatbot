@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>MIT Kundapura AI Chatbot</title>
+    <meta charset="UTF-8">
+    <title>MITK AI Assistant</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:500,700,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <img src="College-logo.jpg" alt="College Logo" class="college-logo">
-        <span class="title">MIT Kundapura</span>
-        <span class="subtitle">AI Assistant - Always here to help</span>
-    </div>
-    <div class="chatbox">
-        <div class="bot-message initial-message">
-            Hello! I'm your College AI Assistant. How can I help you today?
-            I can answer questions about admissions, courses, campus facilities, events, and more!
-            <div class="what-ask">
-                <b>What can I ask?</b>
+    <div id="main-container">
+        <header>
+            <img src="College-logo.jpg" alt="Bot" class="logo">
+            <div>
+                <span class="title">MITK AI Assistant</span>
+                <span class="subtitle">Your trusted college information service</span>
+            </div>
+        </header>
+        <div id="chat-container">
+            <div class="welcome-box">
+                <b>Welcome to MITK AI Assistant!</b> Ask about admissions, courses, campus life, or facilities.
                 <ul>
                     <li>How do I apply for admission?</li>
                     <li>Library timings</li>
                     <li>Who is the Head of CS Dept?</li>
-                    <li>Tell me something about MIT Kundapura</li>
+                    <li>Tell me about upcoming events</li>
                     <li>What facilities do you have?</li>
                     <li>Thank you</li>
                 </ul>
             </div>
+            <div id="messages"></div>
+            <div class="suggested-questions">
+                <button>admissions</button>
+                <button>library timings</button>
+                <button>who is the head of cs dept?</button>
+                <button>get latest events</button>
+                <button>what facilities</button>
+                <button>thank you</button>
+            </div>
+            <form id="chat-form" autocomplete="off">
+                <input type="text" id="topic-input" placeholder="Type your question..." required />
+                <button type="submit">▶</button>
+            </form>
         </div>
-        <div id="chat-history"></div>
-        <div class="suggested">
-            <button data-topic="admissions">Admissions Info</button>
-            <button data-topic="library">Library</button>
-            <button data-topic="hod_cs">Head of CS Dept</button>
-        </div>
-        <form id="topic-form">
-            <input type="text" id="custom-topic" placeholder="Type your question..." autocomplete="off">
-            <button type="submit" class="send-btn">&#9658;</button>
-        </form>
     </div>
     <script src="script.js"></script>
 </body>

@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     background: #f6f9fc;
-}
+} 
 body {
     min-height: 100vh;
     display: flex;

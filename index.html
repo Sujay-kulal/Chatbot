@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MIT Kundapura AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="College-logo.jpg" alt="College Logo" class="college-logo">
+        <span class="title">MIT Kundapura</span>
+        <span class="subtitle">AI Assistant - Always here to help</span>
+    </div>
+    <div class="chatbox">
+        <div class="bot-message initial-message">
+            Hello! I'm your College AI Assistant. How can I help you today?
+            I can answer questions about admissions, courses, campus facilities, events, and more!
+            <div class="what-ask">
+                <b>What can I ask?</b>
+                <ul>
+                    <li>How do I apply for admission?</li>
+                    <li>Library timings</li>
+                    <li>Who is the Head of CS Dept?</li>
+                    <li>Tell me something about MIT Kundapura</li>
+                    <li>What facilities do you have?</li>
+                    <li>Thank you</li>
+                </ul>
+            </div>
+        </div>
+        <div id="chat-history"></div>
+        <div class="suggested">
+            <button data-topic="admissions">Admissions Info</button>
+            <button data-topic="library">Library</button>
+            <button data-topic="hod_cs">Head of CS Dept</button>
+        </div>
+        <form id="topic-form">
+            <input type="text" id="custom-topic" placeholder="Type your question..." autocomplete="off">
+            <button type="submit" class="send-btn">&#9658;</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

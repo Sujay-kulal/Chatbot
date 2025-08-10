@@ -1,248 +1,160 @@
-body {
-    background: #f5f8ff;
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    background: #f6f9fc;
+}
+body {
     min-height: 100vh;
-    box-sizing: border-box;
-}
-
-/* HEADER: always 100vw width, no scroll, padding adapts */
-.header {
-    background: linear-gradient(90deg, #2851C2 90%, #3571FC 100%);
-    color: white;
-    padding: 24px 5vw 16px 5vw;
-    box-sizing: border-box;
-    width: 100vw;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 2px 8px #233b8030;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
-    justify-content: flex-start;
-    min-width: 0;
-    overflow-x: hidden;
+    flex-direction: column;
+    font-family: 'Inter', Arial, sans-serif;
 }
-.college-logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+#main-container {
+    min-height: 100vh;
+    max-width: 900px;
+    width: 100vw;
+    margin: 0 auto;
     background: #fff;
-    object-fit: cover;
-    margin-right: 14px;
-    border: 2px solid #ededed;
-}
-.title {
-    font-size: 1.4em;
-    font-weight: bold;
-    margin-bottom: 1px;
-}
-.subtitle {
-    font-size: 1em;
-    opacity: 0.8;
-    margin-left: 18px;
-}
-
-/* CHATBOX: always centers, max-width at desktop, full at mobile */
-.chatbox {
-    width: 100%;
-    max-width: 480px;
-    margin: 32px auto 0 auto;
-    min-width: 0;
-    background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 4px 16px #233b8022;
-    padding: 18px;
-    box-sizing: border-box;
+    border-radius: 0;
+    box-shadow: 0 2px 12px #2f4d7f22;
+    padding: 0 0 28px 0;
     display: flex;
     flex-direction: column;
 }
-.initial-message {
-    background: #e9f1ff;
-    border-radius: 20px;
-    padding: 14px;
-    margin-bottom: 8px;
-    font-size: 1.05em;
-}
-.what-ask {
-    margin-top: 6px;
-    font-size: 0.99em;
-    background: #edf4fd;
-    border-radius: 8px;
-    padding: 10px 10px 8px 16px;
-}
-.what-ask ul {
-    margin: 6px 0 0 0;
-    padding-left: 20px;
-}
-#chat-history {
-    margin-bottom: 12px;
-    max-height: 320px;
-    min-height: 0;
-    overflow-y: auto;
-}
-
-.message {
-    padding: 13px 16px;
-    margin-bottom: 11px;
-    border-radius: 17px;
-    max-width: 80%;
-    min-width: 0;
-    clear: both;
-    font-size: 1.05em;
-    line-height: 1.3em;
+header {
     display: flex;
     align-items: center;
-    word-break: break-word;
-    box-sizing: border-box;
+    background: #2256b8;
+    color: #fff;
+    border-radius: 0;
+    padding: 22px 32px 16px 32px;
+    border-bottom: 1.5px solid #1b366f12;
 }
-.message .avatar {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    margin-right: 9px;
+.logo {
+    width: 54px; height: 54px; border-radius: 50%;
+    margin-right: 18px;
     object-fit: cover;
-    border: 2px solid #f3f7ff;
-    background: #e5f1ff;
+    background: #fff;
+    box-shadow: 0 1px 10px #2256b844;
+    border: 1.5px solid #fff;
 }
-.message.bot {
-    background: #e9f1ff;
-    float: left;
-    flex-direction: row;
+.title {
+    font-size: 1.6rem; font-weight: 700; display: block; margin-bottom: 4px;
 }
-.message.user {
-    background: #d1e7dd;
-    color: #0f5132;
-    float: right;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
+.subtitle {
+    font-size: 1.08rem; color: #dbe4f2; font-weight: 500;
 }
-.message.user .avatar {
-    margin-left: 9px;
-    margin-right: 0;
-}
-
-.suggested {
-    margin-bottom: 10px;
-    flex-wrap: wrap;
+#chat-container {
+    flex: 1 1 auto;
     display: flex;
-    gap: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 28px 28px 14px 28px;
 }
-.suggested button {
-    background: #2851C2;
+.welcome-box {
+    background: #f3f8fc;
+    border-radius: 8px;
+    padding: 16px 18px 12px 18px;
+    border-left: 4px solid #2256b8;
+    color: #1e3768;
+    font-size: 1.07rem;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px #bce3fa14;
+}
+#messages {
+    flex: 1 1 auto;
+    min-height: 72px;
+    margin-bottom: 18px;
+    overflow-y: auto;
+}
+.message { display: flex; align-items: flex-start; margin-bottom: 10px;}
+.message.user { flex-direction: row-reverse; }
+.avatar {
+    width: 32px; height: 32px; border-radius: 50%;
+    margin: 0 10px; background: #f6f8fa;
+    border: 1px solid #bed1f3;
+    object-fit: cover;
+}
+.bubble {
+    max-width: 80%;
+    background: #f6f8fa;
+    padding: 10px 14px;
+    border-radius: 12px 12px 5px 12px;
+    font-size: 1rem;
+    color: #22346b;
+    border: 1px solid #e3e6ec;
+}
+.message.user .bubble {
+    background: #2256b8;
+    color: #fff;
+    border-radius: 12px 12px 12px 5px;
+    border: 1.5px solid #b8dafa33;
+}
+.suggested-questions {
+    margin-bottom: 12px;
+    text-align: center;
+}
+.suggested-questions button {
+    background: #f0f6ff;
+    color: #2256b8;
+    font-size: 1rem;
+    border: 1px solid #dbe7ff;
+    margin: 4px 4px 2px 0;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.13s, color 0.15s;
+}
+.suggested-questions button:hover {
+    background: #2256b8;
+    color: #fff;
+    border: 1.5px solid #2256b8;
+}
+#chat-form {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+}
+#topic-input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid #d3deec;
+    outline: none;
+    background: #f7fafd;
+    color: #213769;
+    font-family: inherit;
+}
+#topic-input:focus { border: 1.5px solid #2256b8; }
+#chat-form button {
+    background: #2256b8;
     color: #fff;
     border: none;
-    border-radius: 18px;
-    padding: 7px 18px;
-    font-size: 1em;
+    border-radius: 50%;
+    width: 44px; height: 44px;
+    font-size: 1.18rem;
     cursor: pointer;
     transition: background 0.15s;
 }
-.suggested button:hover, .suggested button:focus {
-    background: #3571fc;
-}
-#topic-form {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-}
-#custom-topic {
-    flex: 1;
-    font-size: 1em;
-    padding: 12px 18px;
-    border-radius: 18px;
-    border: 1.5px solid #d0dbff;
-    background: #f7faff;
-    outline: none;
-}
-.send-btn {
-    background: #2851C2;
+#chat-form button:hover {
+    background: #173364;
     color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    font-size: 1.37em;
-    cursor: pointer;
-    box-shadow: 0 2px 4px #2851C222;
 }
-
-/* --- Responsive Enhancements --- */
+@media (max-width: 900px) {
+    #main-container {
+        max-width: 99vw;
+        border-radius: 0;
+        margin: 0;
+    }
+    #chat-container {
+        padding: 14px 2vw 3vw 2vw;
+    }
+}
 @media (max-width: 600px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 18px 3vw 10px 3vw;
-        gap: 8px;
-        width: 100vw;
+    #chat-container {
+        padding: 10px 2vw 6vw 2vw;
     }
-    .college-logo {
-        margin-right: 0;
-        margin-bottom: 5px;
-        width: 30px;
-        height: 30px;
-    }
-    .title, .subtitle {
-        margin-left: 0;
-        font-size: 1.04em !important;
-    }
-    .chatbox {
-        margin: 14px 1.5vw 0 1.5vw;
-        padding: 7px;
-        border-radius: 10px;
-        max-width: 100vw;
-    }
-    #chat-history {
-        margin-bottom: 8px;
-        max-height: 160px;
-    }
-    .message {
-        font-size: 0.96em;
-        padding: 8px 10px;
-    }
-    .message .avatar {
-        width: 22px;
-        height: 22px;
-        margin-right: 5px;
-    }
-    .suggested button {
-        padding: 5px 10px;
-        font-size: 0.96em;
-        border-radius: 13px;
-    }
-    .send-btn {
-        width: 32px;
-        height: 32px;
-        font-size: 1.08em;
-    }
-    .what-ask {
-        padding-left: 6px;
-        padding-right: 6px;
-        font-size: 0.92em;
-    }
-}
-@media (min-width: 800px) {
-    .chatbox {
-        margin: 48px auto 0 auto;
-        max-width: 540px;
-        border-radius: 20px;
-    }
-    .header {
-        padding: 32px 10vw 18px 10vw;
-        border-radius: 0 0 28px 28px;
-        width: 100vw;
-    }
-    #chat-history { max-height: 350px; }
-}
-@media (min-width: 1500px) {
-    .header {
-        padding-left: 22vw;
-        padding-right: 22vw;
-    }
-    .chatbox {
-        max-width: 680px;
-    }
-    #chat-history { max-height: 440px; }
 }

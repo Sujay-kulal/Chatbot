@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const message = document.createElement("div");
         message.className = `message ${sender}`;
         message.innerHTML = `
-            <img class="avatar" src="${sender === 'user' ? 'user.png' : 'bot.jpg'}" />
+            <img class="avatar" src="${sender === 'user' ? 'user.png' : 'bot.png'}" />
             <div class="bubble">${text}</div>
         `;
         messages.appendChild(message);

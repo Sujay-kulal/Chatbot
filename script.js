@@ -14,7 +14,6 @@ window.addEventListener("DOMContentLoaded", () => {
         messages.appendChild(message);
         messages.scrollTop = messages.scrollHeight;
     }
-
     async function getBotResponse(question) {
         addMessage(question, "user");
         topicInput.value = "";

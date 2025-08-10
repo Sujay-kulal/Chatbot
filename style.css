@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .header {
     background: linear-gradient(90deg, #2851C2 90%, #3571FC 100%);
     color: white;
@@ -15,6 +14,7 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 16px;
+    min-width: 0;
 }
 .college-logo {
     width: 40px;
@@ -35,7 +35,6 @@ body {
     opacity: 0.8;
     margin-left: 18px;
 }
-
 .chatbox {
     width: 100%;
     max-width: 480px;
@@ -49,7 +48,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 .initial-message {
     background: #e9f1ff;
     border-radius: 24px;
@@ -68,14 +66,12 @@ body {
     margin: 6px 0 0 0;
     padding-left: 20px;
 }
-
 #chat-history {
     margin-bottom: 16px;
     max-height: 320px;
     min-height: 0;
     overflow-y: auto;
 }
-
 .message {
     padding: 14px 18px;
     margin-bottom: 12px;
@@ -89,8 +85,7 @@ body {
     align-items: center;
     word-break: break-word;
     box-sizing: border-box;
-}
-
+ }
 .message .avatar {
     width: 36px;
     height: 36px;
@@ -116,7 +111,6 @@ body {
     margin-left: 10px;
     margin-right: 0;
 }
-
 .suggested {
     margin-bottom: 10px;
     flex-wrap: wrap;
@@ -162,8 +156,7 @@ body {
     cursor: pointer;
     box-shadow: 0 2px 4px #2851C222;
 }
-
-/* Responsive: MOBILE FIRST, then scale up! */
+/* MOBILE FIRST */
 @media (max-width: 600px) {
     .header {
         flex-direction: column;
@@ -216,6 +209,7 @@ body {
         font-size: 0.93em;
     }
 }
+/* Tablet/Laptop */
 @media (min-width: 800px) {
     .chatbox {
         margin: 50px auto 0 auto;
@@ -228,6 +222,7 @@ body {
     }
     #chat-history { max-height: 350px; }
 }
+/* Large TV/Monitor */
 @media (min-width: 1500px) {
     .header {
         padding-left: 25vw;

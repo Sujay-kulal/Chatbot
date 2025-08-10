@@ -8,12 +8,13 @@ window.addEventListener("DOMContentLoaded", () => {
         const message = document.createElement("div");
         message.className = `message ${sender}`;
         message.innerHTML = `
-            <img class="avatar" src="${sender === 'user' ? 'user.png' : 'bot.png'}" />
+            <img class="avatar" src="${sender === 'user' ? 'user.png' : 'bot.jpg'}" />
             <div class="bubble">${text}</div>
         `;
         messages.appendChild(message);
         messages.scrollTop = messages.scrollHeight;
     }
+
     async function getBotResponse(question) {
         addMessage(question, "user");
         topicInput.value = "";

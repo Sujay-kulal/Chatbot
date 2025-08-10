@@ -28,19 +28,16 @@ body {
     margin-right: 14px;
     border: 2px solid #ededed;
 }
-
 .title {
     font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 2px;
 }
-
 .subtitle {
     font-size: 1em;
     opacity: 0.8;
     margin-left: 18px;
 }
-
 /* CHATBOX */
 .chatbox {
     width: 100%;
@@ -55,7 +52,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 .initial-message {
     background: #e9f1ff;
     border-radius: 24px;
@@ -63,7 +59,6 @@ body {
     margin-bottom: 10px;
     font-size: 1.05em;
 }
-
 .what-ask {
     margin-top: 8px;
     font-size: 0.99em;
@@ -71,12 +66,10 @@ body {
     border-radius: 8px;
     padding: 10px 10px 8px 16px;
 }
-
 .what-ask ul {
     margin: 6px 0 0 0;
     padding-left: 20px;
 }
-
 /* CHAT HISTORY */
 #chat-history {
     margin-bottom: 16px;
@@ -84,7 +77,6 @@ body {
     min-height: 0;
     overflow-y: auto;
 }
-
 /* MESSAGE BUBBLES */
 .message {
     padding: 14px 18px;
@@ -100,7 +92,6 @@ body {
     word-break: break-word;
     box-sizing: border-box;
 }
-
 .message .avatar {
     width: 36px;
     height: 36px;
@@ -110,13 +101,11 @@ body {
     border: 2px solid #f3f7ff;
     background: #e5f1ff;
 }
-
 .message.bot {
     background: #e9f1ff;
     float: left;
     flex-direction: row;
 }
-
 .message.user {
     background: #d1e7dd;
     color: #0f5132;
@@ -124,12 +113,10 @@ body {
     justify-content: flex-end;
     flex-direction: row-reverse;
 }
-
 .message.user .avatar {
     margin-left: 10px;
     margin-right: 0;
 }
-
 /* SUGGESTED BUTTONS */
 .suggested {
     margin-bottom: 10px;
@@ -137,7 +124,6 @@ body {
     display: flex;
     gap: 8px;
 }
-
 .suggested button {
     background: #2851C2;
     color: #fff;
@@ -148,12 +134,10 @@ body {
     cursor: pointer;
     transition: background 0.15s;
 }
-
 .suggested button:hover, 
 .suggested button:focus {
     background: #3571fc;
 }
-
 /* INPUT AREA */
 #topic-form {
     display: flex;
@@ -161,7 +145,6 @@ body {
     gap: 8px;
     width: 100%;
 }
-
 #custom-topic {
     flex: 1;
     font-size: 1em;
@@ -171,7 +154,6 @@ body {
     background: #f7faff;
     outline: none;
 }
-
 .send-btn {
     background: #2851C2;
     color: #fff;
@@ -183,7 +165,6 @@ body {
     cursor: pointer;
     box-shadow: 0 2px 4px #2851C222;
 }
-
 /* MOBILE FIRST - screens <= 600px */
 @media (max-width: 600px) {
     .header {
@@ -237,7 +218,6 @@ body {
         font-size: 0.93em;
     }
 }
-
 /* Table/Laptop - from 800px up */
 @media (min-width: 800px) {
     .chatbox {
@@ -253,7 +233,6 @@ body {
         max-height: 350px;
     }
 }
-
 /* Large Screens / TV - from 1500px up */
 @media (min-width: 1500px) {
     .header {

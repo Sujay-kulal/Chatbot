@@ -1,13 +1,52 @@
 {
   "admissions": "Admissions usually open in June-July every year. For eligibility, dates, and application forms, contact admissions@mitkundapura.edu or visit the Admissions Office.",
+  "eligibility": "Generally 10+2 with relevant subjects (e.g., Physics and Mathematics for B.E.) plus a qualifying entrance exam.",
+  "admission_fees": "Indicative B.E. fee range: INR 1,27,810 – 7,44,444 (as per external sources; verify with the Admissions Office).",
+  "counseling": "After qualifying in the entrance exam, candidates must participate in the official counseling process for seat allocation.",
+  "entrance_exams": "Main entrance exams include KCET, COMEDK, KMAT, MAT, CAT, and PGCET (varies by course).",
   "library": "The Central Library is open 8:00 AM – 8:00 PM, Monday to Saturday. You can borrow up to 3 books for 14 days. Late returns may incur a small fine.",
-  "hod_cs": "The Head of the Department (CSE) is Dr. A. Kumar. You can reach the department office during working hours for appointments.",
+  "labs": {
+    "computer_lab": "Equipped with high-performance systems, internet connectivity, and licensed software for programming and project work.",
+    "electronics_lab": "Provides instruments and components for circuit design, testing, and embedded systems experiments.",
+    "mechanical_lab": "Includes machinery and tools for manufacturing, thermodynamics, and materials testing."
+  },
+  "hod_cs": "Mr. Muralidhara B K is the Head of the Department (CSE). You can reach the department office during working hours for appointments.",
   "hostel": "Hostels have in-time at 9:30 PM on weekdays and 10:00 PM on weekends. For allocation and fees, contact the Hostel Office.",
-  "placements": "The Training & Placement Cell conducts drives from August to March. Workshops on resume building and mock interviews are held every semester.",
+  "placements": {
+    "overview": "The Training & Placement Cell conducts drives from August to March. Workshops on resume building and mock interviews are held every semester.",
+    "training": "Soft skills, aptitude, technical training, company-specific preparation, mock interviews, and group discussions.",
+    "stats_2024_2025": {
+      "placement_rate": "85–90%",
+      "average_package": "₹6–7 LPA",
+      "highest_package": "₹25 LPA",
+      "lowest_package": "₹3.5 LPA",
+      "top_recruiters": ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Amazon", "Microsoft"]
+    },
+    "stats_2021_2022": {
+      "placement_rate": "Approx. 83%",
+      "recruiters": ["Infosys", "IBM", "Wipro", "Tech Mahindra"]
+    }
+  },
   "canteen": "The canteen operates 8:30 AM – 6:30 PM on working days and offers vegetarian and non-vegetarian options.",
   "scholarships": "Merit and government scholarships are available. Check notices from the Scholarship Cell or the official website for deadlines.",
   "transport": "College buses cover major routes in Kundapura and nearby towns. Timetables are posted on the notice board and website.",
   "fees": "Fee payment can be made online or at the Accounts Section. Receipts are issued instantly for in-person payments.",
-  "calendar": "The academic calendar with holidays, examination schedules, and events is available on the college website and department notice boards."
+  "calendar": "The academic calendar with holidays, examination schedules, and events is available on the college website and department notice boards.",
+  "departments": [
+    "Computer Science & Engineering",
+    "Electronics & Communication Engineering",
+    "Mechanical Engineering",
+    "Civil Engineering",
+    "Artificial Intelligence & Machine Learning"
+  ],
+  "events": {
+    "technical": ["Hackathons", "Coding Competitions", "Project Exhibitions"],
+    "cultural": ["College Fest", "Music Night", "Dance Competitions"],
+    "sports": ["Cricket Tournament", "Football Tournament", "Athletics Meet"]
+  },
+  "contact_info": {
+    "email": "info@mitkundapura.edu",
+    "phone": "+91-8254-123456",
+    "address": "MIT Kundapura, Moodlakatte, Kundapura, Karnataka, India"
+  }
 }
-

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Overview</title>
+  <link rel="stylesheet" href="/docs/print.css" />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; line-height: 1.6; }
+    h1 { margin-bottom: 6px; }
+    h2 { margin-top: 26px; }
+    code { background: #f1f5f9; padding: 2px 6px; border-radius: 6px; }
+    .kbd { border: 1px solid #cbd5e1; border-bottom-width: 3px; padding: 0 6px; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    @media print { body { margin: 10mm; } }
+  </style>
+</head>
+<body>
+  <h1>MITK AI Assistant – Project Overview</h1>
+  <p>Single‑page chat assistant for campus information. Backend uses Flask; frontend is HTML/CSS/JS.</p>
+
+  <h2>How to run</h2>
+  <ol>
+    <li>Install dependencies: <code>python -m pip install -r requirements.txt</code></li>
+    <li>Start server: <code>python main.py</code></li>
+    <li>Open <code>http://localhost:5000</code></li>
+  </ol>
+
+  <h2>Frontend</h2>
+  <ul>
+    <li>UI files: <code>index.html</code>, <code>style.css</code>, <code>script.js</code></li>
+    <li>Features: timestamps, auto‑growing textarea, typing indicator, suggested follow‑ups</li>
+    <li>Input: Enter sends the message (no Shift behavior). Send button also works.</li>
+    <li>Responsive: centered container with max width, mobile‑friendly paddings</li>
+    <li>Note: dark mode and copy buttons were removed as requested.</li>
+  </ul>
+
+  <h2>Backend</h2>
+  <ul>
+    <li>Endpoints: <code>GET /</code> static, <code>POST /chat</code>, <code>GET /info</code>, <code>GET /suggestions</code>, <code>GET /health</code></li>
+    <li>Rate limits (if enabled): 30/min on <code>/chat</code>, 120/hour on <code>/info</code></li>
+    <li>Content: editable JSON in <code>data/college_info.json</code> and <code>data/synonyms.json</code></li>
+  </ul>
+
+  <h2>Editing knowledge</h2>
+  <p>Update answers in <code>data/college_info.json</code>, and synonyms/keywords in <code>data/synonyms.json</code>. Restart server to reload.</p>
+
+  <h2>Keyboard and input</h2>
+  <p>Press Enter to send. The textarea auto‑expands up to 160px.</p>
+
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li>“Error connecting to server”: ensure the server is running (<code>python main.py</code>). Then visit <code>/health</code> to check it returns <code>{"status":"ok"}</code>.</li>
+    <li>Open the app via <code>http://localhost:5000</code>, not by double‑clicking the HTML file.</li>
+    <li>If you see 429 (Too Many Requests) in Network tab, wait ~60 seconds and retry.</li>
+    <li>Hard refresh the browser (Ctrl+F5) after code changes.</li>
+  </ul>
+
+  <h2>Future improvements</h2>
+  <ul>
+    <li>Markdown rendering for bot responses</li>
+    <li>Embeddings‑based semantic matching</li>
+    <li>Admin page to edit FAQs and view analytics</li>
+  </ul>
+
+  <h2>Printing</h2>
+  <p>Use browser Print to save this as PDF. For code, open <code>/docs/Codebase_Snapshot.html</code>.</p>
+</body>
+</html>
+
+

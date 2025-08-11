@@ -1,0 +1,13 @@
+{
+  "admissions": ["admission", "apply", "join", "enroll", "cutoff", "eligibility"],
+  "library": ["library", "book", "timing", "issue", "return"],
+  "hod_cs": ["head of cs", "cs hod", "hod computer", "cse hod", "hod"],
+  "hostel": ["hostel", "warden", "mess", "in time", "night"],
+  "placements": ["placement", "drive", "t&p", "job", "internship"],
+  "canteen": ["canteen", "food", "lunch", "snacks"],
+  "scholarships": ["scholarship", "fee waiver", "merit"],
+  "transport": ["bus", "transport", "route", "pickup"],
+  "fees": ["fee", "tuition", "payment", "accounts"],
+  "calendar": ["calendar", "holiday", "schedule", "exam"]
+}
+

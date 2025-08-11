@@ -1,0 +1,8 @@
+@media print {
+  a[href]:after { content: " (" attr(href) ")"; font-size: 0.9em; color: #6b7280; }
+}
+
+body { color: #0f172a; }
+h1, h2, h3 { color: #0b1220; }
+code, pre { page-break-inside: avoid; }
+

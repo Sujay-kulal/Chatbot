@@ -1,13 +1,53 @@
 {
-  "admissions": ["admission", "apply", "join", "enroll", "cutoff", "eligibility"],
-  "library": ["library", "book", "timing", "issue", "return"],
-  "hod_cs": ["head of cs", "cs hod", "hod computer", "cse hod", "hod"],
-  "hostel": ["hostel", "warden", "mess", "in time", "night"],
-  "placements": ["placement", "drive", "t&p", "job", "internship"],
-  "canteen": ["canteen", "food", "lunch", "snacks"],
-  "scholarships": ["scholarship", "fee waiver", "merit"],
-  "transport": ["bus", "transport", "route", "pickup"],
-  "fees": ["fee", "tuition", "payment", "accounts"],
-  "calendar": ["calendar", "holiday", "schedule", "exam"]
+  "admissions": [
+    "admission", "admissions", "apply", "join", "enroll", "enrolment",
+    "cutoff", "cut-off", "eligibility", "how to apply", "application form"
+  ],
+  "library": [
+    "library", "libraries", "book", "books", "timing", "open hours",
+    "issue", "return", "borrow", "reading hall"
+  ],
+  "hod_cs": [
+    "head of cs", "cs hod", "hod computer", "cse hod", "hod", "department head cs"
+  ],
+  "hostel": [
+    "hostel", "hostels", "warden", "mess", "in time", "night", "hostel rules",
+    "accommodation", "room", "boarding"
+  ],
+  "placements": [
+    "placement", "placements", "drive", "t&p", "training and placement",
+    "job", "jobs", "career", "hiring", "campus selection"
+  ],
+  "canteen": [
+    "canteen", "food", "lunch", "snacks", "mess", "cafeteria", "coffee shop"
+  ],
+  "scholarships": [
+    "scholarship", "scholarships", "fee waiver", "merit", "financial aid",
+    "grant", "stipend"
+  ],
+  "transport": [
+    "bus", "transport", "route", "pickup", "drop", "college bus",
+    "shuttle", "vehicle"
+  ],
+  "fees": [
+    "fee", "fees", "tuition", "payment", "accounts", "cost", "charges"
+  ],
+  "calendar": [
+    "calendar", "holiday", "holidays", "schedule", "exam", "events",
+    "academic calendar", "timetable"
+  ],
+  "entrance_exams": [
+    "kcet", "comedk", "kmat", "mat", "cat", "pgcet", "entrance exam",
+    "exam", "competitive exam"
+  ],
+  "eligibility": [
+    "eligibility", "qualify", "qualification", "10+2", "criteria", "requirement"
+  ],
+  "admission_fees": [
+    "fee", "fees", "be fees", "tuition", "course fees", "college fees"
+  ],
+  "counseling": [
+    "counseling", "counselling", "seat allocation", "choice filling",
+    "admission counselling"
+  ]
 }
-

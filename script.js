@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
         messageDiv.classList.add('message', sender);
         let imgHTML;
         if (sender === 'user') {
-            imgHTML = `<img class="avatar" src="static/user.jpg" alt="User">`;
+            imgHTML = `<img class="avatar" src="user.jpg" alt="User">`;
         } else {
-            imgHTML = `<img class="avatar" src="static/bot.jpg" alt="Bot">`;
+            imgHTML = `<img class="avatar" src="bot.jpg" alt="Bot">`;
         }
         messageDiv.innerHTML = imgHTML + `<span class="msg-text">${text}</span>`;
         chatHistory.appendChild(messageDiv);

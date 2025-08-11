@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>MITK AI Assistant | Smart Campus Companion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
-        <img class="college-logo" src="static/College-logo.jpg" alt="MIT Kundapura Logo">
+        <img class="college-logo" src="College-logo.jpg" alt="MIT Kundapura Logo">
         <div>
             <span class="title">MITK AI Assistant</span>
             <span class="subtitle">Smart Campus Companion</span>
@@ -15,14 +16,14 @@
     </div>
     <div class="chatbox">
         <div class="initial-message">
-            <strong>Welcome to MITK AI Assistant! 🤖</strong><br>
-            Ask me anything about Moodlakatte Institute of Technology – academics, departments, hostels, and more!
+            <strong>Welcome to MITK AI Assistant!</strong><br>
+            <span>Ask me anything about Moodlakatte Institute of Technology – academics, departments, hostels, and more.</span>
         </div>
         <div class="what-ask">
             <span>Here are some things I can help with:</span>
             <ul>
                 <li>Academic programs and syllabus</li>
-                <li>Departments and HoDs (Hod CS, etc)</li>
+                <li>Departments and HoDs (HoD CS, etc)</li>
                 <li>Opening times like library and Soudeshakar</li>
                 <li>Events and festival information</li>
                 <li>Hostel rules and administration</li>
@@ -39,6 +40,9 @@
             <input id="custom-topic" type="text" placeholder="Type your question..." autocomplete="off">
             <button type="submit" class="send-btn">&#9658;</button>
         </form>
+        <div class="chat-footer">
+            <small>This assistant is for campus informational purposes only.<br>Powered by MITK AI &copy; 2025</small>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import difflib
 
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__)
 CORS(app)
 
 COLLEGE_INFO = {
@@ -68,7 +68,6 @@ def home():
 
 @app.route('/<path:filename>')
 def static_files(filename):
-    # For serving CSS, JS and image files
     return send_from_directory('.', filename)
 
 if __name__ == '__main__':

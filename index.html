@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>MITK AI Assistant | Smart Campus Companion</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="header">
-        <img class="college-logo" src="College-logo.jpg" alt="MIT Kundapura Logo">
+        <img class="college-logo" src="College-logo.jpg" alt="MIT Kundapura Logo" />
         <div>
             <span class="title">MITK AI Assistant</span>
             <span class="subtitle">Smart Campus Companion</span>
@@ -18,11 +18,11 @@
     <div class="chatbox">
         <div id="chat-history"></div>
         <form id="topic-form" autocomplete="off">
-            <input id="custom-topic" type="text" placeholder="Type your question..." autocomplete="off">
-            <button type="submit" class="send-btn">&#9658;</button>
+            <textarea id="custom-topic" placeholder="Type your question..." rows="1"></textarea>
+            <button type="submit" class="send-btn" aria-label="Send">&#9658;</button>
         </form>
         <div class="chat-footer">
-            <small>This assistant is for campus informational purposes only.<br>Powered by MITK AI &copy; 2025</small>
+            <small>This assistant is for campus informational purposes only.</small>
         </div>
     </div>
     <script src="script.js"></script>

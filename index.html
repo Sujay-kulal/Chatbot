@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>MITK AI Assistant</title>
-    <link href="https://fonts.googleapis.com/css?family=Inter:500,700,400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>MITK AI Assistant | Smart Campus Companion</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main-container">
-        <header>
-            <img src="College-logo.jpg" alt="Bot" class="logo" />
-            <div>
-                <span class="title">MITK AI Assistant</span>
-                <span class="subtitle">Your trusted college information service</span>
-            </div>
-        </header>
-        <div id="chat-container">
-            <div class="welcome-box">
-                <b>Welcome to MITK AI Assistant!</b> Ask about admissions, courses, campus life, or facilities.
-                <ul>
-                    <li>How do I apply for admission?</li>
-                    <li>Library timings</li>
-                    <li>Who is the Head of CS Dept?</li>
-                    <li>Tell me about upcoming events</li>
-                    <li>What facilities do you have?</li>
-                    <li>Thank you</li>
-                </ul>
-            </div>
-            <div id="messages"></div>
-            <div class="suggested-questions">
-                <button>admissions</button>
-                <button>library timings</button>
-                <button>who is the head of cs dept?</button>
-                <button>get latest events</button>
-                <button>what facilities</button>
-                <button>thank you</button>
-            </div>
-            <form id="chat-form" autocomplete="off">
-                <input type="text" id="topic-input" placeholder="Type your question..." required />
-                <button type="submit">▶</button>
-            </form>
+    <div class="header">
+        <img class="college-logo" src="static/College-logo.jpg" alt="MIT Kundapura Logo">
+        <div>
+            <span class="title">MITK AI Assistant</span>
+            <span class="subtitle">Smart Campus Companion</span>
         </div>
+    </div>
+    <div class="chatbox">
+        <div class="initial-message">
+            <strong>Welcome to MITK AI Assistant! 🤖</strong><br>
+            Ask me anything about Moodlakatte Institute of Technology – academics, departments, hostels, and more!
+        </div>
+        <div class="what-ask">
+            <span>Here are some things I can help with:</span>
+            <ul>
+                <li>Academic programs and syllabus</li>
+                <li>Departments and HoDs (Hod CS, etc)</li>
+                <li>Opening times like library and Soudeshakar</li>
+                <li>Events and festival information</li>
+                <li>Hostel rules and administration</li>
+            </ul>
+            <span>What would you like to know?</span>
+        </div>
+        <div class="suggested">
+            <button data-topic="admissions">Admissions</button>
+            <button data-topic="library">Library Timings</button>
+            <button data-topic="hod_cs">CS HoD</button>
+        </div>
+        <div id="chat-history"></div>
+        <form id="topic-form" autocomplete="off">
+            <input id="custom-topic" type="text" placeholder="Type your question..." autocomplete="off">
+            <button type="submit" class="send-btn">&#9658;</button>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>

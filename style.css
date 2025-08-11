@@ -7,7 +7,11 @@ html, body {
     font-size: 15px; /* slightly zoomed out */
 }
 * { box-sizing: border-box; }
-:root { --container-max: 1100px; }
+:root {
+  --container-max: 1100px;
+  --primary-start: #2851C2;
+  --primary-end: #3571FC;
+}
 body { min-height: 100vh; min-width: 100vw; display: flex; flex-direction: column; align-items: center; }
 .header {
     width: 100vw;
@@ -58,7 +62,26 @@ body { min-height: 100vh; min-width: 100vw; display: flex; flex-direction: colum
 #topic-form { display: flex; gap: 10px; width: 100%; margin-top: 18px; }
 #custom-topic { flex: 1; border-radius: 16px; border: 1px solid #2851C235; background: #f6f8fc; padding: 10px 14px; font-size: 1em; resize: none; line-height: 1.4; max-height: 160px; }
 #custom-topic:focus { border: 1.5px solid #3571FC; background: #fff; }
-.send-btn { background: linear-gradient(90deg, #2851C2, #3571FC); color: white; border-radius: 50%; width: 40px; height: 40px; font-size: 1.1em; border: none; cursor: pointer; }
+.send-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--primary-start), var(--primary-end));
+  color: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(40, 81, 194, 0.28);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 200ms ease;
+  will-change: transform;
+}
+.send-btn svg { fill: #fff; width: 18px; height: 18px; }
+.send-btn:hover { transform: translateY(-1px); box-shadow: 0 10px 18px rgba(40, 81, 194, 0.32); }
+.send-btn:active { transform: translateY(0); box-shadow: 0 4px 10px rgba(40, 81, 194, 0.25); }
+.send-btn:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+.send-btn:disabled { opacity: 0.6; cursor: not-allowed; box-shadow: none; }
 .timestamp { color: #6b7280; font-size: 0.8em; }
 .send-btn:disabled { opacity: 0.6; cursor: not-allowed; }
 .clear-btn { background: #e9ecef; color: #333; border-radius: 50%; width: 44px; height: 44px; font-size: 1.1em; border: 1px solid #cfd3d7; cursor: pointer; }
@@ -81,8 +104,12 @@ body { min-height: 100vh; min-width: 100vw; display: flex; flex-direction: colum
 }
 
 @media (max-width: 420px) {
-  .send-btn { width: 36px; height: 36px; font-size: 1em; }
+  .send-btn { width: 40px; height: 40px; }
   #custom-topic { padding: 9px 12px; font-size: 0.95em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .send-btn { transition: none; }
 }
 
 /* Dark mode removed per request */

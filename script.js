@@ -33,13 +33,34 @@ document.addEventListener('DOMContentLoaded', () => {
         chatHistory.scrollTop = chatHistory.scrollHeight;
     }
 
+    function showTypingIndicator() {
+        const chatHistory = document.getElementById('chat-history');
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'typing bot';
+        typingDiv.id = 'typing-indicator';
+        typingDiv.innerHTML = `<img class="avatar" src="bot.jpg" alt="Bot">
+        <span class="typing-dots">
+            <span></span><span></span><span></span>
+        </span>`;
+        chatHistory.appendChild(typingDiv);
+        chatHistory.scrollTop = chatHistory.scrollHeight;
+    }
+
+    function hideTypingIndicator() {
+        const typingDiv = document.getElementById('typing-indicator');
+        if (typingDiv) typingDiv.remove();
+    }
+
     function getTopicInfo(topic) {
+        showTypingIndicator();
         fetch(`/info?topic=${encodeURIComponent(topic)}`)
             .then(res => res.json())
             .then(data => {
+                hideTypingIndicator();
                 addMessage(data.response, 'bot');
             })
             .catch(() => {
+                hideTypingIndicator();
                 addMessage("Error connecting to server.", 'bot');
             });
     }

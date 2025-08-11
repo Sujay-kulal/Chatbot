@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     background: #f6f9fc;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 body {
     min-height: 100vh;
@@ -13,7 +14,7 @@ body {
 #main-container {
     min-height: 100vh;
     max-width: 900px;
-    width: 100vw;
+    width: 100%; /* Fixed from 100vw */
     margin: 0 auto;
     background: #fff;
     border-radius: 30px;
@@ -68,7 +69,9 @@ header {
     margin-bottom: 18px;
     overflow-y: auto;
 }
-.message { display: flex; align-items: flex-start; margin-bottom: 10px; }
+.message { 
+    display: flex; align-items: flex-start; margin-bottom: 10px; 
+}
 .message.user { flex-direction: row-reverse; }
 .avatar {
     width: 32px; height: 32px; border-radius: 50%;
@@ -80,7 +83,7 @@ header {
     max-width: 75%;
     background: #f6f8fa;
     padding: 10px 14px;
-    border-radius: 30px;  /* pill shaped */
+    border-radius: 30px; 
     font-size: 1rem;
     color: #22346b;
     border: 1px solid #e3e6ec;
@@ -88,7 +91,7 @@ header {
 .message.user .bubble {
     background: #2256b8;
     color: #fff;
-    border-radius: 30px; /* pill shaped */
+    border-radius: 30px; 
     border: 1.5px solid #b8dafa33;
 }
 .suggested-questions {
@@ -143,6 +146,8 @@ header {
     background: #173364;
     color: #fff;
 }
+
+/* Tablet adjustments */
 @media (max-width: 900px) {
     #main-container {
         max-width: 99vw;
@@ -153,8 +158,23 @@ header {
         padding: 14px 2vw 3vw 2vw;
     }
 }
+
+/* Mobile adjustments */
 @media (max-width: 600px) {
+    header {
+        padding: 14px 20px;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+    .subtitle {
+        font-size: 0.95rem;
+    }
+    .bubble {
+        max-width: 85%;
+        font-size: 0.95rem;
+    }
     #chat-container {
         padding: 10px 2vw 6vw 2vw;
     }
-}
+    }

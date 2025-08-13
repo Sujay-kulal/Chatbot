@@ -1,5 +1,94 @@
 {
   "admissions": "Admissions usually open in June-July every year. For eligibility, dates, and application forms, contact admissions@mitkundapura.edu or visit the Admissions Office.",
+  "about": {
+    "institution": "Moodlakatte Institute of Technology (MIT Kundapura, MITK) is a private engineering and management college in Kundapura, Karnataka.",
+    "affiliation": "Affiliated to Visvesvaraya Technological University (VTU), Belagavi; approved by AICTE.",
+    "established": "Established in 2004 by Moodlakatte Nagarathna Bhujanga Shetty Trust (founding member: I. M. Jayarama Shetty).",
+    "location": "Kundapura, Udupi District, Karnataka, India.",
+    "sources": ["Wikipedia", "mitkundapura.com"]
+  },
+  "responses": {
+    "greetings": {
+      "hi": "Hi! 👋 I'm the MITK AI Assistant. Ask me about admissions, fees, departments, hostels, placements, or campus life.",
+      "hello": "Hello! 👋 I'm the MITK AI Assistant. How can I help you with MIT Kundapura today?",
+      "hey": "Hey! 👋 I'm here to help with MIT Kundapura info — admissions, placements, hostels, library, and more.",
+      "yo": "Yo! 😎 What's up? I'm your MITK buddy here to help with all things MIT Kundapura!",
+      "yo buddy": "Yo buddy! 😎 What's happening? Ready to explore MIT Kundapura together?",
+      "sup": "Sup! 😊 I'm your MITK assistant - what would you like to know about our awesome college?",
+      "whats up": "What's up! 😊 I'm here and ready to chat about MIT Kundapura!",
+      "good morning": "Good morning! ☀️ What would you like to know about MIT Kundapura?",
+      "good afternoon": "Good afternoon! 🌤️ How can I assist you with MITK today?",
+      "good evening": "Good evening! 🌅 What would you like to explore about MIT Kundapura?",
+      "hi there": "Hi there! 👋 I'm the MITK AI Assistant. What can I help you find?",
+      "hello there": "Hello there! 👋 How can I assist you today?",
+      "good day": "Good day! 👋 Ask me anything about MIT Kundapura.",
+      "morning": "Morning! ☀️ Ready to dive into MIT Kundapura info?",
+      "afternoon": "Afternoon! 🌤️ What's on your mind about MITK?",
+      "evening": "Evening! 🌅 Perfect time to learn about MIT Kundapura!",
+      "hey there": "Hey there! 👋 What can I help you discover about MITK today?",
+      "hiya": "Hiya! 😊 I'm your friendly MITK assistant - what would you like to explore?",
+      "greetings": "Greetings! 👋 Welcome to the MITK AI Assistant. How can I help you today?",
+      "wassup": "Wassup! 😎 I'm your MITK buddy - ready to share some awesome college info!",
+      "bhai": "Bhai! 😎 Kya haal hai? I'm your MITK buddy ready to help with college info!",
+      "yaar": "Yaar! 😊 What's up? Ready to explore MIT Kundapura together?",
+      "dude": "Dude! 😎 What's happening? I'm here to help with all things MITK!",
+      "bro": "Bro! 😎 What's up? Ready to discover some awesome MIT Kundapura info?",
+      "arey": "Arey! 😊 Kya scene hai? I'm your MITK assistant - what would you like to know?",
+      "oye": "Oye! 😎 What's up buddy? Ready to explore MIT Kundapura?",
+      "namaste": "Namaste! 🙏 I'm your MITK AI Assistant. How can I help you today?",
+      "jai shree krishna": "Jai Shree Krishna! 🙏 I'm your MITK buddy ready to help with college info!",
+      "ram ram": "Ram Ram! 🙏 What would you like to know about MIT Kundapura?",
+      "salaam": "Salaam! 🙏 I'm here to help you with MIT Kundapura information!",
+      "gm": "GM! ☀️ Good morning! Ready to explore MIT Kundapura?",
+      "gn": "GN! 🌙 Good night! Sweet dreams! Come back tomorrow for more MITK info!",
+      "howdy": "Howdy! 🤠 I'm your friendly MITK assistant - what can I help you with?",
+      "aloha": "Aloha! 🌺 I'm your MITK buddy ready to share some awesome college vibes!",
+      "ciao": "Ciao! 👋 I'm your MITK assistant - what would you like to explore?",
+      "hola": "Hola! 👋 I'm here to help with all things MIT Kundapura!",
+      "kya haal hai": "Sab badhiya! 😊 I'm doing great and ready to help you with MIT Kundapura info! Kya puchna chahte ho?",
+      "kaise ho": "Main bilkul mast hun! 😎 Ready to help you explore MIT Kundapura! Tum batao, kya janna chahte ho?",
+      "sab badhiya": "Haan bilkul! 😊 Sab badhiya hai! Ready to help you with MITK info!",
+      "mast": "Mast! 😎 I'm also feeling great! Ready to share some awesome MIT Kundapura info with you!",
+      "kya scene hai": "Scene ye hai ki main tumhara MITK buddy hun! 😎 Ready to help with college info!",
+      "kya chal raha hai": "MIT Kundapura ke baare mein sab kuch chal raha hai! 😊 What would you like to know?",
+      "kya hua": "Kuch nahi, bas tumhari help karne ke liye ready hun! 😊 MIT Kundapura ke baare mein kya janna chahte ho?",
+      "acha": "Haan bilkul acha! 😊 I'm here to help you with all things MIT Kundapura!",
+      "theek hai": "Perfect! 😊 So what would you like to know about MIT Kundapura?",
+      "ok": "Cool! 😎 Ready to explore MIT Kundapura together?",
+      "hmm": "Hmm... thinking about MIT Kundapura? 😊 Let me help you discover something awesome!",
+      "wow": "Wow! 😍 I'm also excited to share MIT Kundapura info with you!",
+      "amazing": "Amazing! ✨ MIT Kundapura is truly amazing! What would you like to explore?",
+      "awesome": "Awesome! 😎 I'm here to share all the awesome things about MIT Kundapura!",
+      "cool": "Cool! 😎 Ready to discover some cool stuff about MIT Kundapura?",
+      "great": "Great! 😊 Let's explore some great things about MIT Kundapura together!",
+      "perfect": "Perfect! 😊 I'm here to give you perfect information about MIT Kundapura!",
+      "excellent": "Excellent! 🌟 Ready to share excellent MIT Kundapura info with you!",
+      "fantastic": "Fantastic! 🚀 Let's explore some fantastic things about MIT Kundapura!",
+      "super": "Super! 💫 I'm super excited to help you with MIT Kundapura info!",
+      "brilliant": "Brilliant! ✨ Ready to share some brilliant insights about MIT Kundapura!"
+    },
+    "small_talk": {
+      "how are you": "I'm doing amazingly well, thanks for asking! 😊✨ I'm always super excited to help students and visitors discover everything awesome about MIT Kundapura. What's on your mind today?",
+      "what's your name": "I'm the MITK AI Assistant - your super friendly and smart guide to everything MIT Kundapura! Think of me as your personal campus buddy who knows all the cool stuff! 😎",
+      "who are you": "Hey! I'm your official MITK AI Assistant - designed specifically to be your friendly guide through all things MIT Kundapura! I know everything about our programs, facilities, campus life, and I'm here to make your college journey awesome! 🚀",
+      "thank you": "You're absolutely welcome! 🙏✨ I love helping people discover what makes MIT Kundapura so special. Don't hesitate to ask anything else - I'm here for you!",
+      "thanks": "My pleasure! 😊💫 I get super excited when I can help people explore MIT Kundapura. Feel free to ask me anything - I'm your friendly campus companion!",
+      "what can you do": "Oh, I can do so many cool things! 😎 I can tell you all about MIT Kundapura's admissions, placements, departments, hostels, events, library, labs, and tons more! Just ask me anything about our awesome college - I'm your go-to buddy!",
+      "help": "I'm here to help, buddy! 😊 You can ask me about anything MIT Kundapura related: admissions process, placement stats, courses, hostel life, campus events, library resources, labs, contact info, and so much more! What interests you most?",
+      "how are you doing": "I'm doing fantastic! 😊✨ Always energized and ready to help you explore MIT Kundapura. How about you? What would you like to know about our awesome college?",
+      "are you ok": "I'm absolutely great! 😊 Thanks for asking! I'm always happy and ready to help you with anything MIT Kundapura related. What's on your mind?",
+      "you good": "I'm doing awesome! 😎 Ready to help you discover everything cool about MIT Kundapura. What would you like to explore?",
+      "what's new": "Well, I'm always learning new things about MIT Kundapura! 😊 What's new with you? Ready to explore some awesome college info together?",
+      "nice to meet you": "Nice to meet you too! 😊 I'm super excited to be your MITK buddy and help you discover everything amazing about our college!",
+      "goodbye": "Goodbye! 👋 It was awesome chatting with you! Come back anytime - I'm always here to help with MIT Kundapura info!",
+      "bye": "Bye! 👋 Take care! Don't forget I'm here whenever you need MITK info!",
+      "see you": "See you later! 👋 Looking forward to our next chat about MIT Kundapura!",
+      "take care": "You too! 😊 Take care and remember I'm here whenever you need MITK assistance!",
+      "have a good day": "You too! 😊 Have an amazing day! Come back anytime for more MIT Kundapura info!",
+      "good night": "Good night! 🌙 Sweet dreams! I'll be here tomorrow ready to help with more MITK info!",
+      "night": "Night! 🌙 Sleep well! See you soon for more MIT Kundapura adventures!"
+    }
+  },
   "eligibility": "Generally 10+2 with relevant subjects (e.g., Physics and Mathematics for B.E.) plus a qualifying entrance exam.",
   "admission_fees": "Indicative B.E. fee range: INR 1,27,810 – 7,44,444 (as per external sources; verify with the Admissions Office).",
   "counseling": "After qualifying in the entrance exam, candidates must participate in the official counseling process for seat allocation.",
@@ -10,10 +99,15 @@
     "electronics_lab": "Provides instruments and components for circuit design, testing, and embedded systems experiments.",
     "mechanical_lab": "Includes machinery and tools for manufacturing, thermodynamics, and materials testing."
   },
-  "hod_cs": "Mr. Muralidhara B K is the Head of the Department (CSE). You can reach the department office during working hours for appointments.",
+  "hod_cs": {
+    "name": "Mr. Muralidhara B K",
+    "designation": "Head of the Department (CSE)",
+    "department": "Computer Science and Engineering",
+    "note": "For appointments, please contact the CSE department office during working hours."
+  },
   "hostel": "Hostels have in-time at 9:30 PM on weekdays and 10:00 PM on weekends. For allocation and fees, contact the Hostel Office.",
   "placements": {
-    "overview": "The Training & Placement Cell conducts drives from August to March. Workshops on resume building and mock interviews are held every semester.",
+    "overview": "Recruiters include TCS, Bosch, Infosys, IBM, Wipro, Tech Mahindra, HP, Godrej, and others. Student-reported placement experience ~3.7/5.",
     "training": "Soft skills, aptitude, technical training, company-specific preparation, mock interviews, and group discussions.",
     "stats_2024_2025": {
       "placement_rate": "85–90%",
@@ -27,17 +121,28 @@
       "recruiters": ["Infosys", "IBM", "Wipro", "Tech Mahindra"]
     }
   },
-  "canteen": "The canteen operates 8:30 AM – 6:30 PM on working days and offers vegetarian and non-vegetarian options.",
+  "canteen": "The canteen operates 8:30 AM – 6:30 PM on working days and offers vegetarian options only.",
   "scholarships": "Merit and government scholarships are available. Check notices from the Scholarship Cell or the official website for deadlines.",
   "transport": "College buses cover major routes in Kundapura and nearby towns. Timetables are posted on the notice board and website.",
   "fees": "Fee payment can be made online or at the Accounts Section. Receipts are issued instantly for in-person payments.",
+  "admission_channels": {
+    "ug": ["KCET", "COMEDK UGET"],
+    "pg": ["Karnataka PGCET", "KCET (MBA)"]
+  },
+  "fee_range": "₹1.17 L – ₹7.44 L (approx., program dependent)",
   "calendar": "The academic calendar with holidays, examination schedules, and events is available on the college website and department notice boards.",
   "departments": [
-    "Computer Science & Engineering",
-    "Electronics & Communication Engineering",
+    "Computer Science and Engineering",
+    "Computer Science and Engineering (Data Science)",
+    "CSE (AI and ML)",
+    "Information Science and Engineering",
+    "Electronics and Communication Engineering",
     "Mechanical Engineering",
     "Civil Engineering",
-    "Artificial Intelligence & Machine Learning"
+    "Artificial Intelligence and Machine Learning",
+    "MBA",
+    "MCA",
+    "Basic Science and Humanities"
   ],
   "events": {
     "technical": ["Hackathons", "Coding Competitions", "Project Exhibitions"],
@@ -47,6 +152,9 @@
   "contact_info": {
     "email": "info@mitkundapura.edu",
     "phone": "+91-8254-123456",
-    "address": "MIT Kundapura, Moodlakatte, Kundapura, Karnataka, India"
-  }
+    "address": "Moodlakatte Institute of Technology, Kundapura, Moodlakatte, Kundapura, Karnataka, India"
+  },
+  "full_name": "Moodlakatte Institute of Technology, Kundapura",
+  "short_name": "MIT Kundapura"
+  
 }

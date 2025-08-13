@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>MITK AI Assistant | Smart Campus Companion</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITK AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <img class="college-logo" src="College-logo.jpg" alt="MIT Kundapura Logo" />
-        <div>
-            <span class="title">MITK AI Assistant</span>
-            <span class="subtitle">Smart Campus Companion</span>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <img src="College-logo.jpg" alt="MIT Kundapura Logo" class="logo">
+                    </div>
+                    <div class="header-text">
+                        <h1>MITK AI Assistant</h1>
+                        <p>Smart Campus Companion</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <div class="chat-box">
+                <!-- Messages -->
+                <div class="messages" id="messages">
+                    <!-- Initial welcome message will be added by JavaScript -->
+                </div>
+
+                <!-- Input Form -->
+                <div class="input-container">
+                    <form id="chat-form" class="chat-form">
+                        <textarea 
+                            id="message-input" 
+                            placeholder="Type your question..."
+                            rows="1"
+                            class="message-input"
+                        ></textarea>
+                        <button type="submit" id="send-button" class="send-button">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22,2 15,22 11,13 2,9"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                    <p class="disclaimer">This assistant is for campus informational purposes only.</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="chatbox">
-        <div id="chat-history"></div>
-        <form id="topic-form" autocomplete="off">
-            <textarea id="custom-topic" placeholder="Type your question..." rows="1"></textarea>
-            <button type="submit" class="send-btn" aria-label="Send">&#9658;</button>
-        </form>
-        <div class="chat-footer">
-            <small>This assistant is for campus informational purposes only.</small>
-        </div>
-    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
